@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Practice </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="main">
+    <h1>Welcome to Electron StopWatch</h1>
+    <h3>We are using...</h3>
+    <p>Node.js ver.<span id="node-version"></span></p>
+    <p>Chromium ver.<span id="chrome-version"></span></p>
+    <p>Electron ver.<span id="electron-version"></span></p>
+
+    <hr>
+
+    <dl>
+      <dd class="timer">00:00:00</dd>
+    </dl>
+
+    <div class="timer-set">
+      <button id="Start" class="btn">スタート</button>
+      <button id="Stop" class="btn">ストップ</button>
+      <button id="Reset" class="btn">リセット </button>
+    </div>
+
+  </div>
+
+  <script src="./code.js"></script>
+  <script src="./preload.js"></script>
+</body>
+
 </html>
